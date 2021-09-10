@@ -6,6 +6,7 @@ This is a timed quiz with multiple choice questions that runs in the browser and
 ## Application URL:
 
 ## GitHub URL:
+https://github.com/MissyStiner/code-quiz
 
 ## User Story:
 AS A coding boot camp student <br>
