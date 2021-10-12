@@ -29,6 +29,7 @@ THEN I can save my initials and score
 ## Mock-Up
 ![https://courses.bootcampspot.com/courses/715/files/723425/preview]
 
+
 # Grading Requirements:
 This challenge is graded based on the following criteria:
 
