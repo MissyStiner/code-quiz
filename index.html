@@ -10,8 +10,8 @@
 <body>
     <header>
         <nav>
-            <p>View high scores</p>
-            <p>Time:</p>
+            <div><a href="#high-scores">View high scores</a></div>
+            <div class="timer">Time: </div>
         </nav>
     </header>
     <main>
@@ -22,10 +22,11 @@
             Try to answer the following code-related questions within the time limit. 
             Keep in mind that incorrect answers will penalize your score/time by ten seconds!
         </p>
-        <button>
-            Start Quiz
-        </button>
+        <button class="button" id="start-quiz">Start Quiz</button>
     </main>
+    <footer>
+        <p id=#high-scores>High Scores:</p>
+    </footer>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
