@@ -4,6 +4,7 @@
 This is a timed quiz with multiple choice questions that runs in the browser and features dynamically updated HTML and CSS powered by JavaScript.
 
 ## Application URL:
+https://missystiner.github.io/code-quiz/
 
 ## GitHub URL:
 https://github.com/MissyStiner/code-quiz
