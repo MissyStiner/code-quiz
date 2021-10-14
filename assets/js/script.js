@@ -1,35 +1,78 @@
-var buttonStartQuiz = document.querySelector("#start-quiz");
-console.log(buttonStartQuiz);
+var buttonStartQuiz = document.getElementById('start-quiz');
+var timerCountdown = document.getElementById("time");
 
-// Commonly used data types DO not include
-// 1. strings
-// 2. booleans no
-// 3. alerts
-// 4. numbers
+function clockTick() {
+    time--;
+    timerCountdown.textContent = time;
+}
 
-// The condition in an if/else statment is enclosed with _____.
-// 1. quotes
-// 2. curly brackets
-// 3. parenthesis yes
-// 4. square brackets
+function startQuiz() {
+    var startScreenEl = document.getElementById("start-screen");
+    startScreenEl.setAttribute("class", "hide");
+    //questionsEl.removeAttribute("class");
+    timerCountdown = setInterval(clockTick, 1000);
+    timerCountdown.textContent = time;
+    //getQuestion();
+}
 
-// Arrays in JavaScript can be used to store _______.
-// 1. numbers and strings
-// 2. other Arrays
-// 3. booleans
-// 4 all of the above yes
+buttonStartQuiz.onclick = startQuiz;
 
-// String values must be enclosed within _____ when being assigned to variables.
-// 1. commas
-// 2. curly brackets ***correct***
-// 3. quotes
-// 4. parenthesis
 
-// A very useful tool used during development and debugging for printing content to the debugger is:
-// 1. JavaScript
-// 2. terminal/bash
-// 3. for loops
-// 4. console.log ***Correct***
+  // Questions
+var questions = [
+    {
+        title: "Commonly used data types don't include:",
+        choices: [
+            "strings", 
+            "booleans", 
+            "alerts", 
+            "numbers"
+                ],
+        answer: "alerts"
+    },
+    {
+        title: "The condition in an if/else statment is enclosed with _____.",
+        choices: [
+            "quotes", 
+            "curly brackets", 
+            "parenthesis", 
+            "square brackets"
+                ],
+        answer: "parenthesis"
+    },
+    {
+        title: "Arrays in JavaScript can be used to store _______.",
+        choices: [
+            "numbers and strings", 
+            "other arrays", 
+            "booleans", 
+            "all of the above"
+                ],
+        answer: "all of the above"
+    },
+    {
+        title: "String values must be enclosed within _____ when being assigned to variables.",
+        choices: [
+            "commas", 
+            "curly brackets", 
+            "quotes", 
+            "parenthesis"
+                ],
+        answer: "quotes"
+    },
+    {
+        title: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        choices: [
+            "JavaScript", 
+            "terminal/bash", 
+            "for loops", 
+            "console.log"
+                ],
+        answer: "console.log"
+    },
+]
+
+
 
 // All done!
 // Your final score is 22.
