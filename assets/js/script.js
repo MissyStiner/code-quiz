@@ -1,24 +1,27 @@
 var buttonStartQuiz = document.getElementById('start-quiz');
-var timerCountdown = document.getElementById("time");
+var timerCountdown = document.getElementById('time');
 
 function clockTick() {
     time--;
     timerCountdown.textContent = time;
+    if (time <= 0) {
+        quizEnd();
+    }
 }
 
 function startQuiz() {
     var startScreenEl = document.getElementById("start-screen");
     startScreenEl.setAttribute("class", "hide");
-    //questionsEl.removeAttribute("class");
+    questionsEl.removeAttribute("class");
     timerCountdown = setInterval(clockTick, 1000);
     timerCountdown.textContent = time;
-    //getQuestion();
+    getQuestion();
 }
 
 buttonStartQuiz.onclick = startQuiz;
 
 
-  // Questions
+// Questions
 var questions = [
     {
         title: "Commonly used data types don't include:",
