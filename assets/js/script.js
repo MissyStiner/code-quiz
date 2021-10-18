@@ -1,21 +1,22 @@
 var buttonStartQuiz = document.getElementById('start-quiz');
 var timerCountdown = document.getElementById('time');
+var timeLimit = 45
+var timer 
 
 function clockTick() {
-    time--;
-    timerCountdown.textContent = time;
-    if (time <= 0) {
-        quizEnd();
-    }
+    timeLimit--;
+    timerCountdown.textContent = timeLimit;
+    // if (timeLimit <= 0) {
+    //     quizEnd();
+    // }
 }
 
 function startQuiz() {
     var startScreenEl = document.getElementById("start-screen");
     startScreenEl.setAttribute("class", "hide");
-    questionsEl.removeAttribute("class");
-    timerCountdown = setInterval(clockTick, 1000);
-    timerCountdown.textContent = time;
-    getQuestion();
+   // questionsEl.removeAttribute("class");
+    timer = setInterval(clockTick, 1000);
+   // showQuestion();
 }
 
 buttonStartQuiz.onclick = startQuiz;
