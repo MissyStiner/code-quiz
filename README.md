@@ -30,31 +30,6 @@ THEN I can save my initials and score
 ## Mock-Up
 ![https://courses.bootcampspot.com/courses/715/files/723425/preview]
 
-
-# Grading Requirements:
-This challenge is graded based on the following criteria:
-
-## Technical Acceptance Criteria: 40%
-Satisfies all of the above acceptance criteria.
-## Deployment: 32%
-Application deployed at live URL.<br>
-Application loads with no errors.<br>
-Application GitHub URL submitted.<br>
-GitHub repository that contains application code.
-
-## Application Quality: 15%
-Application user experience is intuitive and easy to navigate.<br>
-Application user interface style is clean and polished.<br>
-Application resembles the mock-up functionality provided in the Challenge instructions.<br>
-
-## Repository Quality: 13%
-Repository has a unique name.<br>
-Repository follows best practices for file structure and naming conventions.<br>
-Repository follows best practices for class/id naming conventions, indentation, high-quality comments, etc.<br>
-Repository contains multiple descriptive commit messages.<br>
-Repository contains a high-quality README file with description, screenshot, and link to deployed application.
-
-## How to Submit the Challenge
-You are required to submit BOTH of the following for review:<br>
-The URL of the functional, deployed application.<br>
-The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+## Known Issues for Future Resolution
+When clicked, the timer will count down but continues into the negative.<br>
+Questions don't fire yet when the quiz is started.
